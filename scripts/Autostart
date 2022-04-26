@@ -1,0 +1,12 @@
+#!/bin/sh
+# Setting the screen size (this is going to disappeas soon)
+xrandr --newmode "1680x1050_60.00"  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync
+xrandr --addmode VGA-0 "1680x1050_60.00"
+xrandr --output VGA-0 --mode "1680x1050_60.00"
+
+# Mouse speed because im lazy to look up how to change the default value for libinputs mouse accel or i dont even know
+
+xinput --set-prop "Glorious Model O" 296 -0.7
+
+# maybe start some stuff (havent tried this yet)
+discord & firefox 
